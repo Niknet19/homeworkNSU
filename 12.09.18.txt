@@ -1,0 +1,32 @@
+1.
+#include<iostream>
+using namespace std;
+int main() {
+	const int n = 6;
+	int nums[n];
+	int sum;
+	sum = ((n )*(n -1) / 2);
+	int newsum = 0;
+	for (int i = 0; i < n; i++)cin >> nums[i];
+	for (int i = 0; i < n; i++) {
+		newsum = newsum + nums[i];
+	}
+	cout << newsum-sum;
+	return 0;
+}
+
+2.
+
+#include <iostream>
+using namespace std;
+int main() {
+	const int n=10;
+	int a[n] = { 1,2,4,53,2,3,2,2,56,2};
+	for (int i = 1; i < n-1; i++) {
+		if (a[i] == a[i - 1] || a[i]==a[i + 1]||a[i-1]==a[i+1]) {
+			cout << a[i];
+			break;
+		};
+	}
+	return 0;
+}
